@@ -28,7 +28,7 @@ class JQTree extends CTreeView
 		$cs=Yii::app()->getClientScript();
 
 		//$cs->registerCoreScript('treeview');
-		$baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('ext.jqTree.source'));
+		$baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('ext.yii-jqTree.source'));
 		$cs->registerScriptFile($baseUrl . '/tree.jquery.js');
 
 		$options=$this->getClientOptions();
